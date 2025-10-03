@@ -11,8 +11,8 @@
     <groupId>com.dexterv</groupId>
     <artifactId>financetracker</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>personalFinanceTrackerwithAuth</name>
-    <description>personalFinanceTrackerwithAuth</description>
+    <name>personalFinanceTracker</name>
+    <description>personalFinanceTracker</description>
     <url/>
     <licenses>
         <license/>
@@ -28,6 +28,8 @@
     </scm>
     <properties>
         <java.version>21</java.version>
+        <org.mapstruct.version>1.6.3</org.mapstruct.version>
+        <lombok.version>1.18.36</lombok.version>
     </properties>
     <dependencies>
         <dependency>
@@ -41,6 +43,14 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
 
         <dependency>
@@ -56,8 +66,15 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
             <optional>true</optional>
         </dependency>
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
+            <version>${org.mapstruct.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
