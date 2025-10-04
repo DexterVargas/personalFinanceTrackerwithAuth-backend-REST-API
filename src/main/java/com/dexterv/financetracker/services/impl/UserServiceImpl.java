@@ -18,6 +18,9 @@ public class UserServiceImpl implements UserService {
     public User create(User user) {
         user.setRole(UserRole.USER);
 
-        return userRepository.save(user);
+        User savedUser = userRepository.save(user);
+        userRepository.flush(); // ensure audit fields populated
+
+        return savedUser;
     }
 }
