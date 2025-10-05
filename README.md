@@ -1,4 +1,4 @@
-# Personal Finance Tracker Backend-API
+# [ On-going ] - Personal Finance Tracker Backend-API
 
 A **full-stack web application** to help users manage their personal finances.
 The app allows users to **track income and expenses, view reports, and generate insights** on spending habits.
