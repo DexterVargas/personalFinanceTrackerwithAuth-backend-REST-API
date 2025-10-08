@@ -1,5 +1,6 @@
 package com.dexterv.financetracker.mappers;
 
+import com.dexterv.financetracker.domain.dtos.UserResponseDto;
 import com.dexterv.financetracker.domain.dtos.UserSignupResponseDto;
 import com.dexterv.financetracker.domain.dtos.UserSignupRequestDto;
 import com.dexterv.financetracker.domain.entities.User;
@@ -14,4 +15,6 @@ public interface UserMapper {
 
     // from User Entity > dto
     UserSignupResponseDto userSignupResponseToDto (User user);
+
+    UserResponseDto userToUserResponseDto (User user);
 }

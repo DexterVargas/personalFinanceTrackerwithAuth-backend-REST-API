@@ -8,6 +8,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -22,5 +23,10 @@ public class UserServiceImpl implements UserService {
         userRepository.flush(); // ensure audit fields populated
 
         return savedUser;
+    }
+
+    @Override
+    public Optional<User> getUserByEmail(String email) {
+        return userRepository.getUserByEmail(email);
     }
 }
